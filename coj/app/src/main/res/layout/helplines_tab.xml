@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.thmotaun.coj.MainActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click link below to contact relevent division:" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/textViewE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Immediate Emergencies:" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/emerg"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Medical Emergency"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/lawe"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Emergency Response"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/fire"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Cellphone Emergency&#10;(Free Of Charge)"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/textViewS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Services:" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/emerg_con"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Emergency Connect"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/revn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Revenue Customer Service"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/watr"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Water Services&#10;(24h)"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <!--<Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:textSize="17sp" />-->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/anti"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_button"
+                android:text="Anti-Fraud Hotline"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

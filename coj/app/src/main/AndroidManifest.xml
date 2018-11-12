@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thmotaun.coj">
+
+    <permission
+        android:name="your.package.name.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="your.package.name.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/jhb"
+        android:label="City Of Jo&apos;burg"
+        android:roundIcon="@mipmap/jhb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBHvWIAJAZ2nSoq_Uw_BLwZvXDe78yEVgw" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="City of Jo&apos;burg"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".roadsActivity"
+            android:label="Report Road Fault" />
+        <activity
+            android:name=".elecActivity"
+            android:label="Report Electricity Fault" />
+        <activity
+            android:name=".fireActivity"
+            android:label="Report Fire Fault" />
+        <activity
+            android:name=".housActivity"
+            android:label="Report Housing Fault" />
+        <activity
+            android:name=".lawActivity"
+            android:label="Report Law Enforcement Issue" />
+        <activity
+            android:name=".parkActivity"
+            android:label="Report Park Issue" />
+        <activity
+            android:name=".reqActivity"
+            android:label="General Requests" />
+        <activity
+            android:name=".soldActivity"
+            android:label="Report Solid Waste Issue" />
+        <activity
+            android:name=".statActivity"
+            android:label="Request Statement" />
+        <activity
+            android:name=".trafActivity"
+            android:label="Report Traffic Services Issue" />
+        <activity
+            android:name=".watrActivity"
+            android:label="Report Water and Sanitation Issue" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.thmotaun.coj.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view_acc"
+            android:label="View Account" />
+        <activity
+            android:name=".prepaidActivity"
+            android:label="Buy Prepaid Electricity" />
+        <activity
+            android:name=".billActivity"
+            android:label="View Municipal Bill" />
+        <activity
+            android:name=".CreateActivity"
+            android:label="Create Account" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.thmotaun.coj.MainActivity" />
+        </activity>
+        <activity android:name=".loadingActivity"></activity>
+    </application>
+
+</manifest>
